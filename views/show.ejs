@@ -1,0 +1,15 @@
+<%- include('./header'); %>
+
+    <div class="container">
+        <div class='justify-content-center align-self-center'>
+            <img src={<%= url %>} alt="nasa picture">
+            <h3> <%= title %> </h3>
+            <p> <%= explanation %> </p>
+            <form method="GET" action="/">
+                <button type="submit" class="btn btn-primary w-100">
+                    Executar novamente
+                </button>
+            </form>
+        </div>
+    </div>
+    <%- include('./footer'); %>
